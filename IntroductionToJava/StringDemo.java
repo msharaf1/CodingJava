@@ -35,9 +35,9 @@ public class StringDemo {
         // int d = ninja.indexof("Pizza");
 
         System.out.println(ninja);
-        // System.out.println(a);
-        sentence = sentence.trim(ninja2);
-        System.out.println(sentence.trim());
+        System.out.println(ninja2);
+        // sentence = sentence.trim(ninja2);
+        // System.out.println(sentence.trim());
     }
 }
 
