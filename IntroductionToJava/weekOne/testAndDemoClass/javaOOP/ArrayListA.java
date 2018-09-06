@@ -3,13 +3,14 @@ import java.util.List;
 public class ArrayListA{
 
     public ArrayList numberArray(){// function
-    ArrayList<Integer> numbers = new ArrayList<Integer>();
-    
-    numbers.add(10);
-    numbers.add(2);
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        
+        numbers.add(10);
+        numbers.add(2);
 
-    return numbers;
+        return numbers;
 
+        
     }
     // public ArrayListA(){
     //     int num = numbers.get(0);

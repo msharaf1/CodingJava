@@ -6,12 +6,12 @@ public class ArrayListExample{ //creates a class
 
 
     public ArrayList ExampleFunc(){// creates a method
-    ArrayList<String> animals = new ArrayList<>();
-    animals.add("Lion");
-    animals.add("Tiger");
-    animals.add("Python");
-    animals.add("Rattle");
-    return animals;
+      ArrayList<String> animals = new ArrayList<>();
+        animals.add("Lion");
+        animals.add("Tiger");
+        animals.add("Python");
+        animals.add("Rattle");
+      return animals;
 
 }
     // System.out.println(animals);
