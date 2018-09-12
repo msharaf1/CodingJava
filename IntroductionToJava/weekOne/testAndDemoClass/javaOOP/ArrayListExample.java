@@ -6,7 +6,7 @@ public class ArrayListExample{ //creates a class
 
 
     public ArrayList ExampleFunc(){// creates a method
-      ArrayList<String> animals = new ArrayList<>();
+      ArrayList<String> animals = new ArrayList<String>();
         animals.add("Lion");
         animals.add("Tiger");
         animals.add("Python");

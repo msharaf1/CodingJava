@@ -13,10 +13,15 @@ public class JavaBasics {
 		// int[] myArrays = new int[] {1, 2, 3, 4};
 
 		// basics.printArray();
-		int[] myArrays = new int[] {2, 4, 8, 10};
+    	// int[] myArrays = new int[] {2, 4, 8, 10};
+    // int[] myArrays = new int[] {2, 4, 8, 10, 3};
 		// basics.findMax(myArrays);
-		basics.getAvg(myArrays);
-
+    // basics.getAvg(myArrays);
+    	basics.oddArray();
+    
+  //   for(int i = 0; i < myList.size(); i++) {
+  //     Integer castedValue = (Integer) myList.get(i);
+  // }
 
   }
 
@@ -71,21 +76,36 @@ public class JavaBasics {
     // 	System.out.println(max);
     // }
 
-    public void getAvg(int[] myArrays){
-    	int sum = 0;
+    // public void getAvg(int[] myArrays){
+    // 	int sum = 0;
     	
     	
-    	for(int i = 0; i < myArrays.length; i++){
-    		System.out.println("Value of i is: " +i);
-    		System.out.println("Sum before addition: " + sum);
-    		sum += myArrays[i];
-    		System.out.println("Sum After addition: " + sum);
-    	}
-    	float avg = sum / myArrays.length;
-    	// System.out.println(sum);
-    	System.out.println("Average is : " + avg);
-    	// System.out.println(avg);
-    }
+    // 	for(int i = 0; i < myArrays.length; i++){
+    // 		System.out.println("Value of i is: " +i);
+    // 		// System.out.println("Sum before addition: " + sum);
+    // 		sum += myArrays[i];
+    // 		System.out.println("Sum After addition: " + sum);
+    // 	}
+    // 	float avg = sum / myArrays.length;
+    // 	// System.out.println(sum);
+    // 	System.out.println("Average is : " + avg);
+    // 	// System.out.println(avg);
+    // }
+
+
+
+  public void oddArray(){
+    ArrayList<Integer> myOddArrays = new ArrayList<Integer>();
+      for(int i = 0; i <= 10; i++){
+        if(i % 2 != 0){
+          myOddArrays.add(i);
+
+          // System.out.println(myOddArrays);
+
+        }
+       }
+       System.out.println(myOddArrays);
+  }
 
 
 }
