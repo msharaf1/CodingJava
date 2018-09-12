@@ -7,7 +7,7 @@ class Car{
     }
 //Setter 
     public void setNumberOfWheels(int number){
-        numberOfWheels = number;
+        numberOfWheels = number; //if var numberOfWheels doesn't math number, then no need for this.number, if it does then use this. number = number;
     }
 
     public String getColor(){
