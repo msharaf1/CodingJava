@@ -1,14 +1,19 @@
 public class VehicleTest{
     public static void main(String[] args){
         Vehicle redSedan = new Vehicle("Red", 4);
-        // Vehicle redSeda = new Vehicle("red", 5);
+        
+        Vehicle blackBike = new Vehicle("Black", 3);
+        Vehicle blueCycle = new Vehicle ("DarkMaroon", 2); 
+        Vehicle toyotaCorolla = new Vehicle("Maroon", 4);
+        
+        
         String color = redSedan.getColor();
-
+        String corolla =  toyotaCorolla.getColor();
+        int corolla1 = toyotaCorolla.getNumberOfWheels();
         System.out.println(color);
+        System.out.println(corolla);
+        System.out.println(corolla1);
     }
 }
-        // Vehicle blackBike = new Vehicle("Black", 3);
-        // Vehicle fourWheels = new Vehicle ("DarkMaroon", 4); 
-        // Vehicle toyotaCorolla = new Vehicle("Maroon", 4);
 
         // System.out.println();

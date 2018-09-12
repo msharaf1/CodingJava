@@ -3,7 +3,7 @@ class Vehicle{
     private String color;
 
     //constructor:
-    public Vehicle(String color, int numberOfWheels){
+    public Vehicle(String color, int numberOfWheels){ // the number of var here defines what test must put too. Now it expects two inputs rather one.
         this.color = color;
         this.numberOfWheels = numberOfWheels;
     }
