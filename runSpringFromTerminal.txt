@@ -1,5 +1,0 @@
-$ mvn spring-boot:run
-You might also want to use the MAVEN_OPTS operating system environment variable, as shown in the following example:
-
-$ export MAVEN_OPTS=-Xmx1024m
-
