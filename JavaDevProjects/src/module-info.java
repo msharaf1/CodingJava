@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author menhaj
+ *
+ */
+module JavaDevProject {
+	
+}
