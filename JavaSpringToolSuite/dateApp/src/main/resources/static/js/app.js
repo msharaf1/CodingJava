@@ -1,1 +1,0 @@
-alert("Feel Free to choose Date or Time in Spring");
