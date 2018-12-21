@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "app.Main",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Vehicle",
+            "request": "launch",
+            "mainClass": "app.Vehicle",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "Algorithms"
+        }
+    ]
+}
