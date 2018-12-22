@@ -1,35 +1,61 @@
+import java.util.ArrayList;
+
 // import sun.security.util.Length;
 
 public class ArrayPt{
     
-    public ArrayList<String> myBookList = new ArrayList<String>();
+    // public ArrayList<String> myBookList = new ArrayList<String>();
 
     ArrayPt(){};
 
+    public void getValues(){
+        String[] myList = {"Books", "Pens", "Penciles", "Computers"};
+        int[] myQty = {1,2,3,45,6,78,99,333};
+
+        int max =0;
+        int min =0;
+        for(int i=0; i < myQty.length; i++){
+            if(myQty[i] > max){
+                max = myQty[i];
+            }else if(myQty[i] > min){
+                min = myQty[i];
+            }
+        }
+        System.out.println("Maxium value is: "+max);
+        System.out.println("Minimum value is: "+min);
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
     
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
     public void getVals(){

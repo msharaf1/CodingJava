@@ -1,5 +1,32 @@
 public class Main{
     public static void main(String[] args) {
+        ArrayPt myArr = new ArrayPt();
+        Puzzling myPz = new Puzzling();
+       
+
+        myPz.getValue();;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // System.out.println("hello Test");
         // OneTo255 allDigits = new OneTo255();
 
@@ -13,10 +40,11 @@ public class Main{
 // System.out.println(mySL.hW);
         // System.out.println(mySL.getBookList());
     
-    ArrayPt myArr = new ArrayPt();
     
     // System.out.println(myArr.getVals());
-    myArr.getVals();
+    // myArr.getVals();
+
+    // myArr.getValues();
     
     
     
