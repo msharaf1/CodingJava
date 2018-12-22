@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OneTo255Test",
+            "request": "launch",
+            "mainClass": "OneTo255Test"
+        }
+    ]
+}
