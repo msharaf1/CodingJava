@@ -12,6 +12,17 @@ public class OneTo255{
             System.out.println(i);
         }
         return this.OneToFv;
-    }
+    }//1-255
+
+    int getOdds(){
+        for(int i=0; i<=OneToFv; i++){
+            if(i % 2 !=0){
+                System.out.println(i);
+            }
+        }
+        return this.OneToFv;
+    }//Odd numbers
+
+    
 
 }

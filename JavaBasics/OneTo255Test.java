@@ -4,6 +4,9 @@ public class OneTo255Test{
         OneTo255 allDigits = new OneTo255();
 
         // System.out.println(allDigits.getAllDigits());
-        allDigits.getAllDigits();
+        // allDigits.getAllDigits();//prints 1-255;
+        allDigits.getOdds();//prints Odd numbers.
+
+
     }
 }
