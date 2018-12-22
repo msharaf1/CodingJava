@@ -1,10 +1,36 @@
 // import sun.security.util.Length;
 
 public class ArrayPt{
-
+    
+    public ArrayList<String> myBookList = new ArrayList<String>();
 
     ArrayPt(){};
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+/*
 
     public void getVals(){
             /*
@@ -22,7 +48,7 @@ public class ArrayPt{
             System.out.println(bookList[0]);
             System.out.println(bookList[1]);
             System.out.println(qty[1]);
-        */
+        
         String[] myList = {"books", "pens", "whiteboards", "erraser"};
         int[] qty = {1,2,3,4,5,7,8};
         int l = qty.length;
@@ -40,5 +66,22 @@ public class ArrayPt{
         for(String names: myList){
             System.out.println(names);
         }
+
+
+        int counter =0;
+        int counterb = 0;
+        for(int i=0; i < myList.length; i++){
+            System.out.println(myList[i]);
+            counterb++;
+            ++counter;
+        }
+        System.out.println(counter);
+        System.out.println(counterb);
+    
+    
+    
     }
+*/
+
+
 }//class
