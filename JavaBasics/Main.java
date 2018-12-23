@@ -2,9 +2,17 @@ public class Main{
     public static void main(String[] args) {
         ArrayPt myArr = new ArrayPt();
         Puzzling myPz = new Puzzling();
-       
+        
+        // myPz.getValue();;
 
-        myPz.getValue();;
+        SumMethod calcSumTwoParam = new SumMethod(0, 0);
+        calcSumTwoParam.setAddition(25, 65);
+        int result = calcSumTwoParam.getSumResult();
+        System.out.println(result);
+
+        calcSumTwoParam.setAddition(150, 50);
+        int result2 = calcSumTwoParam.getSumResult();
+        System.out.println(result2);
 
 
 
