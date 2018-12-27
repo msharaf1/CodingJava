@@ -36,11 +36,17 @@ public class SongTracksTest{
         // System.out.println(tRs);
 
         
-        
         String[] listRockSongs = {"Jimi", "ColdWater", "AirLover","CrazyLove"};
+
+    
+       
+        String[] listRockSongs1 = {"Ninja", "ColdWater", "AirLover","CrazyLove"};
+        String[] listRockSongs2 = {"Jinja", "ColdWater", "AirLover","CrazyLove"};
         
         songsList.put("RockSongs", Arrays.asList(listRockSongs));
-        // System.out.println(songsList.get("RockSongs"));
+        songsList.put("RockSongs", Arrays.asList(listRockSongs1));
+        songsList.put("RockSongs", Arrays.asList(listRockSongs2));
+        System.out.println(songsList.get("RockSongs"));
 
         for(int i=0; i < listRockSongs.length; i++){
             Integer sID = songID.get("Rock").get(i);
@@ -48,7 +54,7 @@ public class SongTracksTest{
             System.out.println(sID +": " +sL);
         }
 
-
+        
 
 
     }
