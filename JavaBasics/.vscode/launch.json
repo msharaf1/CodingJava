@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PersonTest",
+            "request": "launch",
+            "mainClass": "PersonTest"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HumanTest",
             "request": "launch",
             "mainClass": "HumanTest"
