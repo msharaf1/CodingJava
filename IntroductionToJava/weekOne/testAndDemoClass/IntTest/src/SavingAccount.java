@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class SavingAccount extends BankAccount {
 
-public class SavingAccount {
+    public SavingAccount(String name, long amount){
+        super("saving", amount);
+    }
+
+    @Override
+    public void depositAmount(long amount) {
+        super.depositAmount(amount);
+    }
 }
