@@ -1,11 +1,5 @@
 public class Main {
-    public static void main(String[] args){
-        Pet p = new Dog();
+    public static void main(String[] args) {
 
-        p.test ();
-
-        Dog charli = new Dog();
-
-        charli.test ();
     }
 }
