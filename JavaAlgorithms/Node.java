@@ -3,6 +3,7 @@ public class Node{
     public Node next;
 
     public Node(int value){
+        this.value = value;
         
     }
 }
