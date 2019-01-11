@@ -38,5 +38,36 @@ public class SinglyLinkedList{
             runner = runner.next;
         }
     }
+
+    public int findValue(int value){
+        Node runner = this.head;
+        int count = 0;
+        while(runner !=null){
+            if(runner.value == value){
+                return count;
+            }
+            runner  = runner.next;
+            count++;
+        }
+        return -1;
+    }
+
+    public void removeAt(int index){
+        int count = 0;
+        if(index == 0){
+            this.head = this.head.next;
+        } else {
+            Node runner = this.head;
+            while(runner != null){
+                if(count+1 == index){
+                    runner.next = runner.next.next;
+                    break;
+                }else{
+                    runner = runner.next;
+                    count++;
+                }
+            }
+        }
+    }
     
 }
