@@ -10,7 +10,7 @@ public class EmailApp {
 		 	int leftLimit = 97; // letter 'a'
 		    int rightLimit = 122; // letter 'z'
 		    int targetStringLength = 10;
-//		    Random rand = new Random();
+		    // Random rand = new Random();
 		    StringBuilder buffer = new StringBuilder(targetStringLength);
 		    for (int i = 0; i < targetStringLength; i++) {
 		        int randomLimitedInt = leftLimit + (int) 
@@ -30,7 +30,7 @@ public class EmailApp {
 		cE.setLastName("Jason");
 		cE.setPassword(generatedString);
 		cE.setEmail("g");
-//		cE.getEmail();
+		cE.getEmail();
 //	
 		
 		System.out.println(cE.getEmail());
