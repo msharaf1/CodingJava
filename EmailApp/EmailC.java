@@ -1,5 +1,4 @@
-package EmailAppP;
-import java.util.*;
+
 /*
  Generate an email with the following syntax: firstname.lastname@department.company.com
  Determine the department (sales, development, accounting), if none leave blank
@@ -8,7 +7,7 @@ import java.util.*;
 email address
  Have get methods to display the name, email, and mailbox capacit
  */
-
+import java.util.*;
 public class EmailC {
 	private String firstName;
 	private String lastName;
@@ -16,6 +15,7 @@ public class EmailC {
 	private String company;
 	private String password;
 	private String email;
+	// private int size;
 	
 	public EmailC() {};//Constructor
 	
@@ -68,6 +68,9 @@ public class EmailC {
 	public String getEmail() {
 
 		return email;
+	}
+	public void changePasword(String password){
+		this.password = password;
 	}
 	
 

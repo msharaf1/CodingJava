@@ -1,7 +1,4 @@
-package EmailAppP;
 import java.util.*;
-
-
 
 public class EmailApp {
 
@@ -20,11 +17,12 @@ public class EmailApp {
 		          (rand.nextFloat() * (rightLimit - leftLimit + 1));
 		        buffer.append((char) randomLimitedInt);
 		    }
-		    String generatedString = buffer.toString();
+			String generatedString = buffer.toString();
+			// String generatedString1 = buffer.toString();
 		 
 		    
 	    
-	    System.out.println(generatedString);
+	    // System.out.println(generatedString);
 	    
 		cE.setCompany("Microsoft");
 		cE.setDepartment("IT");
@@ -36,6 +34,12 @@ public class EmailApp {
 //	
 		
 		System.out.println(cE.getEmail());
+		cE.setPassword(generatedString);
+		
+		System.out.println(cE.getPassword());
+		cE.changePasword("hello");
+		System.out.println(cE.getPassword());
+		
 		
 		
 		
