@@ -20,10 +20,13 @@ public class Main {
 //        System.out.println("AccountName: " + newAccount.getAccountName());
 //
 //        System.out.println(newAccount.randNums);
-        newAccount.setTotalAmount();
+//        newAccount.setTotalAmount();
         System.out.println("Number of Accounts Opened # " +newAccount.openedAccounts());
         System.out.println("Checking Account Balance: $" + newAccount.getCheckingBalance());
+//        newAccount.setWithdrawChecking(250.02);
         newAccount.setWithdrawChecking(250.02);
+//        newAccount.setWithdrawChecking(75.50);
+        System.out.println("You Current Checking Account Balance: $" + newAccount.getCheckingBalance());
         System.out.println("You Current Checking Account Balance: $" + Math.round(newAccount.getCheckingBalance()));
         System.out.println("Saving Account: $" + newAccount.getSavingBalance());
         System.out.println("Total Balance: $" + newAccount.getTotalAmount());

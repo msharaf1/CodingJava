@@ -50,6 +50,7 @@ public class BankAccount {
             System.out.println("You must enter a digit above 0");
         } else if ( checkingBalance > 0) {
             this.checkingBalance = getCheckingBalance() + checkingBalance;
+            this.totalAmount += checkingBalance;
         }
     }
     public void setSavingBalance(double savingBalance){
@@ -57,23 +58,24 @@ public class BankAccount {
             System.out.println("You must enter a digit above 0");
         } else if ( savingBalance > 0) {
             this.savingBalance = getSavingBalance() + savingBalance;
+            this.totalAmount += savingBalance;
         }
     }
 
     public void setWithdrawChecking(double withdraw){
-        this.checkingBalance = getCheckingBalance()- withdraw;
+        if(getCheckingBalance() <= 0 || getCheckingBalance() < withdraw){
+            System.out.println("You have insufficent balance to withdraw");
+        }else {
+            this.checkingBalance    = getCheckingBalance()- withdraw;
+            this.totalAmount -= withdraw;
+        }
+
     }
 
     public double getSavingBalance(){
         return this.savingBalance;
     }
-    public void setTotalAmount(){
-        this.totalAmount = getCheckingBalance() + getSavingBalance();
-    }
 
-    public double getTotalAmount(){
-        return this.totalAmount;
-    }
 
 
     public void setAccountName(){
@@ -97,6 +99,13 @@ public class BankAccount {
 
     public int openedAccounts(){
         return this.openedAccounts;
+    }
+//    public void setTotalAmount(){
+//        this.totalAmount = getCheckingBalance() + getSavingBalance();
+//    }
+
+    public double getTotalAmount(){
+        return this.totalAmount;
     }
 
 }
