@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestBookList",
+            "request": "launch",
+            "mainClass": "TestBookList",
+            "projectName": "JBeans_25dae727"
+        }
+    ]
+}
