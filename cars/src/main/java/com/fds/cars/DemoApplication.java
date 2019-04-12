@@ -1,4 +1,4 @@
-package com.bookregistration.sciencebook;
+package com.fds.cars;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

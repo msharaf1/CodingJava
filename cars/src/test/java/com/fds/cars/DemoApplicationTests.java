@@ -1,4 +1,4 @@
-package com.bookregistration.sciencebook;
+package com.fds.cars;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
