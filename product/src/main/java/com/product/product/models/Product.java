@@ -1,15 +1,9 @@
 package com.product.product.models;
 
 import java.util.Date;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -38,7 +32,19 @@ public class Product {
     protected void onUpdate(){
         this.updatedAt = new Date();
     }
-    
+
+
+
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(
+			name = "categoryproduct",
+			joinColumns = @JoinColumn(name = "product_id"),
+			inverseJoinColumns = @JoinColumn(name = "category_id")
+	)
+	private List<Category> category;
+
+
+
 
     public Long getId() {
 		return id;

@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: menhaj
@@ -12,6 +13,13 @@
 </head>
 <body>
     <h1>Welcome PC</h1>
+<div class="container">
+    <div class="subContainer">
+
+        
+    </div>
+
+</div>
 
 </body>
 </html>
