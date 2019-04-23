@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: menhaj
@@ -15,6 +16,8 @@
     <h1>Welcome PC</h1>
 <div class="container">
     <div class="subContainer">
+        <p> <c:out value="${product.name}"></c:out>
+</p>
 
         
     </div>

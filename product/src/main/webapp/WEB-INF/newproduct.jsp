@@ -15,7 +15,7 @@
     <h1>Add a new product!</h1>
     <p> <form:errors path="productObj.*"></form:errors> </p>
     <div class="container">
-        <form:form method="POST" action="/product/new" modelAttribute="productObj">
+        <form:form action="/product/add" method="POST" modelAttribute="productObj">
             <table>
                 <tr>
                     <td><form:label path="name">Name</form:label></td>
