@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface prodRepo extends CrudRepository<Product, Long> {
+public interface ProdRepo extends CrudRepository<Product, Long> {
     @Override
     Optional<Product> findById(Long id);
 

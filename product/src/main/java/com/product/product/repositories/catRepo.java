@@ -8,9 +8,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface catRepo extends CrudRepository<Category, Long> {
+public interface CatRepo extends CrudRepository<Category, Long> {
     @Override
     Optional<Category> findById(Long id);
 
     List<Category> findAll();
+
+//    @Override
+//    void delete(Category id);
 }
