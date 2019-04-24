@@ -19,8 +19,9 @@ public class ProdServ {
         return prodRepo.findById(id).get();
     }
 
-    public void addProduct(Product product){
-        prodRepo.save(product);
+    public Product addProduct(Product product){
+//        product.setDesc(product.getDesc());
+        return prodRepo.save(product);
     }
     public void deleteProduct(long id){
         prodRepo.deleteById(id);

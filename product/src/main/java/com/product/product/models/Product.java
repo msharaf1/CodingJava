@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -18,7 +19,16 @@ public class Product {
 	
 	@Size(min=2,max=255,message="Name must be between 2-255 characters.")
     private String name;
-	
+//	@Column(name="desc", columnDefinition = "String")
+
+	@Size(min=2,max=255,message="Desc must be between 2-255 characters.")
+	private String desc;
+
+//	@Min(value=0,message="price must be between 2-255 characters.")
+////	@NotNull
+//	private double price;
+
+
 	@Column(updatable=false)
     @DateTimeFormat(pattern="MM-dd-yyyy")
     private Date createdAt;
@@ -44,9 +54,23 @@ public class Product {
 	private List<Category> category;
 
 
+	public String getDesc() {
+		return desc;
+	}
 
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 
-    public Long getId() {
+	public List<Category> getCategory() {
+		return category;
+	}
+
+	public void setCategory(List<Category> category) {
+		this.category = category;
+	}
+
+	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {

@@ -16,7 +16,7 @@
     <h1>Welcome PC</h1>
 <div class="container">
     <div class="subContainer">
-        <p> <c:out value="${product.name}"></c:out>
+        <p> <c:out value="${productObj.name}"></c:out>
 </p>
 
         
