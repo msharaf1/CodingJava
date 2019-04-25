@@ -13,7 +13,7 @@ public class Post {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @Size(min=1, max = 55, message="Please write your post")
+    @Size(min=1, max = 55, message="It can not be blank!")
     private String postName;
 
     public Long getId() {

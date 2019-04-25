@@ -29,6 +29,21 @@ public class PostController {
         return "index";
     }
 
+    @GetMapping("/posts/new")
+    public String newPost(@ModelAttribute("postObj") Post post) {
+        return "newpost";
+    }
+
+    @PostMapping("/posts/new")
+    public String create(@Valid @ModelAttribute("postObj") Post post, BindingResult result) {
+        if (result.hasErrors()) {
+            return "newpost";
+        } else {
+            postSer.savePost(post);
+            return "redirect:/posts";
+        }
+    }
+
 
 
 
