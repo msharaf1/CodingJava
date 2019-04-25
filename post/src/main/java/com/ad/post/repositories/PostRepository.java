@@ -9,8 +9,18 @@ import java.util.Optional;
 
 @Repository
 public interface PostRepository extends CrudRepository<Post, Long> {
-    @Override
+
     Optional<Post> findById(Long id);
-    List<Post> findAllBy();
+
+    List<Post> findAll();
+
+//    // this method find a book by their description
+//    List<Post> findByDescriptionContaining(String search);
+//
+//    // this method counts how many titles contain a certain string
+//    Long countByTitleContaining(String search);
+//
+//    // this method deletes a book that starts with a specific title
+//    Long deleteByTitleStartingWith(String search);
 
 }

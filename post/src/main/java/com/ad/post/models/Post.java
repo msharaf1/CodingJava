@@ -29,6 +29,6 @@ public class Post {
     }
 
     public void setPostName(String postName) {
-        postName = postName;
+        this.postName = postName;
     }
 }
