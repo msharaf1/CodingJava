@@ -3,6 +3,8 @@ package com.ad.post.controllers;
 import com.ad.post.models.Post;
 import com.ad.post.repositories.PostRepository;
 import com.ad.post.services.PostService;
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +12,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+
+import java.lang.reflect.Method;
 import java.util.List;
 
 @Controller
@@ -20,6 +24,13 @@ public class PostController {
     public PostController(PostService postSer, PostRepository postRepo){
         this.postRepo = postRepo;
         this.postSer = postSer;
+    }
+
+    @GetMapping("/")
+    public String showPage(Model model) {
+        List<Post> posts = postSer.allPost();
+        model.addAttribute("posts", posts);
+        return "index";
     }
 
     @GetMapping("/posts")
@@ -42,6 +53,12 @@ public class PostController {
             postSer.savePost(post);
             return "redirect:/posts";
         }
+    }//post/new
+
+    @DeleteMapping("/posts/{id}")
+    public String deletePost(@PathVariable("id") Long id){
+        postSer.deletePost(id);
+        return "redirect:/posts";
     }
 
 

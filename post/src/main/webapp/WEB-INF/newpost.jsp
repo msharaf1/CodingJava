@@ -10,16 +10,16 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-    <title>Add a new Post</title>
+    <title>Post and Idea!</title>
 </head>
 <body>
 
 
-<h1>New Post</h1>
+<h1>New Idea!</h1>
 <p><form:errors path="postObj.*"/></p>
 <form:form action="/posts/new" method="POST" modelAttribute="postObj">
     <p>
-        <form:label path="postName">Write Your Post: </form:label>
+        <form:label path="postName">Write Your Idea: </form:label>
 <%--        <form:errors path="postName"></form:errors>--%>
         <form:input path="postName"/>
     </p>

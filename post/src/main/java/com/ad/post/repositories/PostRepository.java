@@ -13,6 +13,7 @@ public interface PostRepository extends CrudRepository<Post, Long> {
     Optional<Post> findById(Long id);
 
     List<Post> findAll();
+    
 
 //    // this method find a book by their description
 //    List<Post> findByDescriptionContaining(String search);
