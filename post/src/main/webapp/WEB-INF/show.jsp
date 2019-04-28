@@ -13,16 +13,22 @@
     <title>Show Ideas</title>
 </head>
 <body>
+  <div class="container">
+    <h1> Posted Idea! <c:out value="${post.id}"/> || <c:out value="${post.postName}"/></h1>
+    <a href="/posts">Home</a>
+   
+  
+  
+  </div>
 
-
-  <h1><c:out value="${post.postName}"/></h1>
+  <%-- <h1><c:out value="${post.postName}"/></h1>
 
   <a href="/books/${book.id}/edit">Edit Book</a>
 
 <form action="/books/${book.id}" method="post">
     <input type="hidden" name="_method" value="delete">
     <input type="submit" value="Delete">
-</form>
+</form> --%>
 
 
 

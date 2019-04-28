@@ -54,6 +54,40 @@ public class PostController {
             return "redirect:/posts";
         }
     }//post/new
+    
+    
+    @GetMapping("/posts/{id}")
+    public String showPost(@PathVariable("id") Long id, Model model ){
+        Post post = postSer.findPost(id);
+        model.addAttribute("post", post);
+        return "show";
+    }
+    
+    //reading data
+    @GetMapping("/posts/{id}/edit")
+    public String editPost(@PathVariable("id") Long id, Model model){
+        // if(result.hasErrors()){
+        //     return "redirect:/posts";
+        // }
+            Post post = postSer.findPost(id);
+            model.addAttribute("post", post);
+        
+            return "editpost";
+    }
+
+    @PutMapping("/posts/{id}")
+    public String editPostById(@PathVariable("id") Long id, @Valid @ModelAttribute("post") Post post, BindingResult result,Model model){
+        if(result.hasErrors()){
+            return "/editpost";
+        } else {
+            postSer.savePost(post);
+        
+            return "redirect:/posts";
+
+        }
+
+    }
+
 
     @DeleteMapping("/posts/{id}")
     public String deletePost(@PathVariable("id") Long id){
