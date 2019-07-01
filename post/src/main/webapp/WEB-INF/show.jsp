@@ -14,7 +14,9 @@
 </head>
 <body>
   <div class="container">
-    <h1> Posted Idea! <c:out value="${post.id}"/> || <c:out value="${post.postName}"/></h1>
+    <h1> Posted Idea!</h1>
+     <p>Post ID: <c:out value="${post.id}"/> </p>
+     <p>Posted Idea: <span style="color:blue"> <c:out value="${post.postName}"/></span></p>
     <a href="/posts">Home</a>
    
   

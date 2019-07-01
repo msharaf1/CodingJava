@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DatePtTest",
+            "request": "launch",
+            "mainClass": "DatePtTest",
+            "projectName": "practiceFiles_72c78312"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testDate",
+            "request": "launch",
+            "mainClass": "testDate",
+            "projectName": "practiceFiles_72c78312"
+        }
+    ]
+}

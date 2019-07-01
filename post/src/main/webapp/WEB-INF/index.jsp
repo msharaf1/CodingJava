@@ -73,11 +73,11 @@
                     <td> 
                         <form Action="/posts/${post.id}" method="POST">
                             <input type="hidden" name="_method" value="delete">
-                            <input type="submit" value="Delete"/>
                             <%-- <button type="submit">Delete </button> --%>
-                        </form>
                         <a href="/posts/${post.id}">Show ||</a>
                         <a href="/posts/${post.id}/edit">Edit</a> 
+                        <input type="submit" value="Delete"/>
+                        </form>
                         <%-- <a href="/posts/${post.id}"><button>Show</buttn> </a>
                         <a href="/posts/${post.id}/edit"><button>Edit</button></a>  --%>
                     </td>
