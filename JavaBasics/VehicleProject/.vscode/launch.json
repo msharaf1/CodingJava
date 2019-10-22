@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HumanTester",
+            "request": "launch",
+            "mainClass": "omastery.HumanTester",
+            "projectName": "vehicleprojects"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - VTester",
+            "request": "launch",
+            "mainClass": "vehicls.VTester",
+            "projectName": "vehicleprojects"
+        }
+    ]
+}

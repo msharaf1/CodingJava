@@ -13,6 +13,9 @@
     <title>All Ideas!</title>
 </head>
 <style>
+    body {
+        background-color: lightgray;
+    }
     table {
         border-collapse: collapse;
         width: 100%;
