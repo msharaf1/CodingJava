@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JPTester",
+            "request": "launch",
+            "mainClass": "proone.JPTester",
+            "projectName": "dojooopprojects"
+        }
+    ]
+}
