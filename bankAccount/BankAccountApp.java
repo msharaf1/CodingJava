@@ -1,3 +1,5 @@
+import comPa.BankAccount;
+
 public class BankAccountApp{
     public static void main(String[] args) {
         Account jamesAccount = new Account();
@@ -28,6 +30,7 @@ public class BankAccountApp{
         );
         jamesAccount.getTotalMoney(jamesAccount);
         System.out.println(Account.totalBalance(jamesAccount));
+       
         
     }
 }

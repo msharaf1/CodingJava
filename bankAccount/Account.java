@@ -66,14 +66,24 @@ public class Account{
     public static double getTotalBalance(){
         return totalBalance;
     }
+    public static void setTotalBalance(double balance){
+        totalBalance = balance;
+    }
 //add money
     public String depositCashChecking(double cash){
+        if(cash < 0){
+            return "Please enter a valid number";
+        }
         this.setCheckingBalance(this.getCheckingBalance() + cash);
+        setTotalBalance(getTotalBalance() + cash);
+        
+        
         return "You added $" +cash +", your current balance is $"+this.getAccounNumber();
     }
 
     public String depositCashSavings(double cash){
         this.setSavingsBalance(this.getSavingsBalance() + cash);
+        setTotalBalance(getTotalBalance() + cash);
         return "You added $" +cash +", your current balance is $"+this.getAccounNumber();
     }
 
@@ -85,6 +95,7 @@ public class Account{
         // else if(cash <= this.getCheckingBalance()){
         // } 
         this.setCheckingBalance(this.getCheckingBalance() - cash);
+        setTotalBalance(getTotalBalance() - cash);
         return "You added $" +cash +", your current balance is $"+this.getAccounNumber();
 
     }
@@ -94,6 +105,7 @@ public class Account{
             return "There is no sufficient ("+ this.getSavingsBalance() +") balance in your account";
         }
         this.setSavingsBalance(this.getSavingsBalance() - cash);
+        setTotalBalance(getTotalBalance() - cash);
         return "You added $" +cash +", your current balance is $"+this.getAccounNumber();
     }
 
@@ -112,5 +124,6 @@ public class Account{
         return totalBalance = account.checkingBalance + account.savingsBalance;
          
     }
+
 
 }
