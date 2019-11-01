@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(235, 235, 235);
+
+}
+
+.mainContainer{
+    display: inline;
+    height: 1000px;
+    width: 1200px;
+}
+.banner{
+    display: inline-block;
+    height: 25%;
+    width: 100%;
+    border: 5px;
+    border-color: blue;
+}
+.barLinks{
+    display: inline-block;
+}
+.miniForm{
+    display: inline-block;
+}

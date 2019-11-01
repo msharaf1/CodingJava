@@ -7,12 +7,10 @@
 <meta charset="ISO-8859-1">
 <title>Lookify</title>
 <link href="/css/stylesheet.css" rel="lightgray">
-
 </head>
 <body>
     <div clas="mainContainer">
         <p>Welcome to Lookify!</p>
-        <a href="/dashboard">Start Looking</a>
     </div>
 
 

@@ -12,7 +12,6 @@
 <body>
     <div clas="mainContainer">
         <p>Welcome to Lookify!</p>
-        <a href="/dashboard">Start Looking</a>
     </div>
 
 
