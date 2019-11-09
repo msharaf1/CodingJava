@@ -11,6 +11,27 @@
 <body>
     <div clas="mainContainer">
         <p>Welcome to Lookify!</p>
+        <a href="/dashboard">Dashboard</a>
+
+        <div class="viewForm">
+            <table>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Rating</th>
+                <th>actions</th>
+            </tr>
+            <tbody>
+            <c:forEach items="${artistsByName}" var="artist">
+                <tr>
+                    <td> <c:out value="${artist.title}" /> </td>
+                    <td> <c:out value="${artist.artistName}" /> </td>
+                    <td> <c:out value="${artist.rating}" /> </td>
+                    <td> <c:out value="${artist.id}"/> <td>
+                </tr>
+                </c:forEach>
+            </tbody>
+        </div>
     </div>
 
 

@@ -6,20 +6,57 @@ body {
 }
 
 .mainContainer{
-    display: inline;
-    height: 1000px;
-    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    /* height: 1000px;
+    width: 1200px; 
 }
 .banner{
-    display: inline-block;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
     height: 25%;
     width: 100%;
     border: 5px;
     border-color: blue;
 }
 .barLinks{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    
+}
+.bLinks {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 10px;
 }
 .miniForm{
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
 }
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: rgb(31, 42, 104);
+    color: white;
+  } 
